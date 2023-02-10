@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Artyst"
+include ':app'
+include ':core'
+include ':data:network'
+include ':domain'
+include ':data:repository'
+include ':feature:search'
+include ':feature:artist_detail'

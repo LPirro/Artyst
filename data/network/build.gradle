@@ -1,0 +1,18 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace 'com.lpirro.network'
+}
+
+dependencies {
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitGsonConverter"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.httpLogginInterceptor"
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.okHttp"
+    implementation "com.google.dagger:hilt-android:$rootProject.hilt"
+    kapt "com.google.dagger:hilt-compiler:$rootProject.hilt"
+}

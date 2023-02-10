@@ -1,0 +1,15 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace 'com.lpirro.domain'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.kotlinxCoroutinesCore"
+    implementation "com.google.dagger:hilt-android:$rootProject.hilt"
+    kapt "com.google.dagger:hilt-compiler:$rootProject.hilt"
+}

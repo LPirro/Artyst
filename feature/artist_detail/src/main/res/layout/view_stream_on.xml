@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:theme="@style/Theme.Artyst"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/card_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/stream_on"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/spotify_icon"
+        android:layout_width="@dimen/stream_icon_size"
+        android:layout_height="@dimen/stream_icon_size"
+        android:layout_marginVertical="16dp"
+        android:alpha="0.5"
+        android:contentDescription="@string/listen_on_spotify_icon_content_description"
+        android:src="@drawable/ic_spotify"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/apple_music_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_title"
+        tools:alpha="1" />
+
+    <ImageView
+        android:id="@+id/apple_music_icon"
+        android:layout_width="@dimen/stream_icon_size"
+        android:layout_height="@dimen/stream_icon_size"
+        android:alpha="0.5"
+        android:contentDescription="@string/listen_on_apple_music_icon_content_description"
+        android:src="@drawable/ic_apple_music"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/amazon_music_icon"
+        app:layout_constraintStart_toEndOf="@+id/spotify_icon"
+        app:layout_constraintTop_toBottomOf="@+id/card_title"
+        tools:alpha="1" />
+
+    <ImageView
+        android:id="@+id/amazon_music_icon"
+        android:layout_width="@dimen/stream_icon_size"
+        android:layout_height="@dimen/stream_icon_size"
+        android:alpha="0.5"
+        android:contentDescription="@string/listen_on_amazon_music_icon_content_description"
+        android:src="@drawable/ic_amazon_music"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tidal_icon"
+        app:layout_constraintStart_toEndOf="@+id/apple_music_icon"
+        app:layout_constraintTop_toBottomOf="@+id/card_title"
+        tools:alpha="1" />
+
+    <ImageView
+        android:id="@+id/tidal_icon"
+        android:layout_width="@dimen/stream_icon_size"
+        android:layout_height="@dimen/stream_icon_size"
+        android:alpha="0.5"
+        android:contentDescription="@string/listen_on_tidal_icon_content_description"
+        android:src="@drawable/ic_tidal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deezer_icon"
+        app:layout_constraintStart_toEndOf="@+id/amazon_music_icon"
+        app:layout_constraintTop_toBottomOf="@+id/card_title"
+        tools:alpha="1" />
+
+    <ImageView
+        android:id="@+id/deezer_icon"
+        android:layout_width="@dimen/stream_icon_size"
+        android:layout_height="@dimen/stream_icon_size"
+        android:alpha="0.5"
+        android:contentDescription="@string/listen_on_deezer_icon_content_description"
+        android:src="@drawable/ic_deezer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tidal_icon"
+        app:layout_constraintTop_toBottomOf="@+id/card_title"
+        tools:alpha="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

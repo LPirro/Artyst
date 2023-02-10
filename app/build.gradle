@@ -1,0 +1,30 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.dagger.hilt.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace 'com.lpirro.artyst'
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    api project(':core')
+    implementation project(':feature:search')
+    implementation project(':feature:artist_detail')
+
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayout"
+    implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationFragmentKtx"
+    implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationUiKtx"
+    implementation "androidx.appcompat:appcompat:$rootProject.appCompat"
+    implementation "androidx.core:core-ktx:$rootProject.coreKtx"
+    implementation "com.google.android.material:material:$rootProject.material"
+    implementation "com.google.dagger:hilt-android:$rootProject.hilt"
+    kapt "com.google.dagger:hilt-compiler:$rootProject.hilt"
+    implementation "com.jakewharton.timber:timber:$rootProject.timber"
+
+}

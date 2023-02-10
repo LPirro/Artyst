@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">Search Artist</string>
+    <string name="search_result_empty">Search Empty</string>
+    <string name="search_your_favourite_artist">Search your favourite artists</string>
+</resources>

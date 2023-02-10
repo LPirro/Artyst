@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="album_cover_size">84dp</dimen>
+    <dimen name="album_spacing">16dp</dimen>
+    <dimen name="album_corners">4dp</dimen>
+    <dimen name="stream_icon_size">52dp</dimen>
+</resources>

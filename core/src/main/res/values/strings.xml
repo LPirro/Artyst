@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empty_search_icon_content_description">Empty Search Icon</string>
+    <string name="empty_search_text">No Artist matches \"%1$s\"</string>
+    <string name="generic_error_title">We have a little problem. Mic-drop.</string>
+    <string name="generic_error_message">Something went wrong. Please check your network connection and try again.</string>
+    <string name="try_again">Try again</string>
+</resources>
