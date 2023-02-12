@@ -19,4 +19,7 @@ dependencies {
     androidTestImplementation "androidx.test.ext:junit:$rootProject.extJunit"
     testImplementation "org.mockito.kotlin:mockito-kotlin:$rootProject.mockitoKotlin"
     testImplementation "org.mockito:mockito-inline:$rootProject.mockitoInline"
+    testImplementation "org.robolectric:robolectric:$rootProject.robolectric"
+    testImplementation "app.cash.turbine:turbine:$rootProject.turbine"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$rootProject.kotlinxCoroutinesCore"
 }
